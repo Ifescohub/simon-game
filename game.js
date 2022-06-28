@@ -87,7 +87,3 @@ function startOver(){
 $("button").click(function(){
     $(".explainer").toggleClass("hidden");
 });
-
-$("button").hover(function(){
-    $(".explainer").toggleClass("hidden");
-});
