@@ -9,25 +9,50 @@
 </head>
 
 <body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div class="row">
-      <div type="button" id="green" class="btn green"></div>
-      <div type="button" id="red" class="btn red"></div>
+  <main>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <div class="container">
+      <div class="row">
+        <div id="green" class="box green"></div>
+        <div id="red" class="box red"></div>
+      </div>
+  
+      <div class="row">
+        <div id="yellow" class="box yellow"></div>
+        <div id="blue" class="box blue"></div>
+      </div>
     </div>
+  
+    <input type="text">
+  
+    <button type="button">Help</button>
+  
+    <article class="explainer hidden">
+      <h2><span class="green">How</span>
+          <span class="red">it</span>
+          <span class="yellow">woks</span>
+          <span class="blue">!</span>
+      </h2>
+      <p>This is a game of sequence. You can start the game by pressing any key on your keyboard</p>
+      <ul>
+        <li>Firstly, the game shows the first colour in the sequence (e.g <span class="blue">blue</span>). 
+          The user clicks on the <span class="blue">blue</span> box.</li>
+        <li>Next, the game shows the next colour (e.g <span class="red">red</span> ), 
+          the user has to remember the sequence is <span class="blue">blue</span>, <span class="red">red</span>  and click accordingly. </li>
+        <li>Next, the game shows the next colour (e.g <span class="green">green</span>), the user follows the sequence and click 
+          <span class="blue">blue</span>, <span class="red">red</span> , <span class="green">green</span> and so on and so forth. </li>
+        <li>If the user messes up the sequence, then the game ends. 
+          The user must press any key on the keyboard to start again.</li>
+      </ul>
+      <p class="mobile">Phone user can click the input area (white space) below the boxes to activate his/her keyboard.</p>
+    </article>
+  </main>
 
-    <div class="row">
-      <div type="button" id="yellow" class="btn yellow"></div>
-      <div type="button" id="blue" class="btn blue"></div>
-    </div>
-  </div>
-
-
-  <input type="text">
-
+  <footer>
+    Made with ❤️ by <a href="https://github.com/Ifescohub" target="_blank">IfEsCo Hub</a> 
+  </footer> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="game.js" charset="utf-8"></script>
-
 </body>
 </html>
