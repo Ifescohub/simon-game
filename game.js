@@ -83,7 +83,7 @@ function startOver(){
 }
 
 
-// To display how it Works when "help" button is clicked
+// To display how it works when "help" button is clicked
 $("button").click(function(){
-    $(".explainer").toggleClass("hidden");
+    $(".explainer").toggleClass("active");
 });
