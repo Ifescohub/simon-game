@@ -1,7 +1,13 @@
+ @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+
+
 body {
   text-align: center;
   background-color: #011F3F;
   position: relative;
+  line-height: 1.5;
 }
 
 #level-title {
@@ -15,7 +21,7 @@ body {
 
 .container {
   display: block;
-  width: 50%;
+  max-width: 50%;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -85,7 +91,7 @@ button{
   padding: 15px;
   text-align: center;
   background-color:  #FEF2BF;
-  color: #080324be;
+  color: #080324f3;
   font-size: 14px;
   position: absolute;
   left: 10px;
@@ -95,28 +101,27 @@ button{
 }
 
 .explainer{
-  color: #FEF2BF;
-  background-color: #080324da;
+  color: #f8f3db;
+  background-color: #360366fa;
   max-width: 40%;
   width: 18rem;
-  position: absolute;
-  left: 0;
-  top: 66px;
+  position: fixed;
+  left: -100%;
+  top: 0;
   text-align: left;
-  font-size: 13px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
+  font-size: 14px;
+  font-family: 'Bai Jamjuree', sans-serif;;
+  font-weight: 400;
+  line-height: 1.2;
   padding: 8px 20px;
   border-radius: 20px;
+  transition: 0.5s ease-in-out;
 }
 
-.explainer::after{
-  content: "";
-  border-top: 30px solid #FEF2BF;
-  border-left: 20px solid transparent;
-  position: absolute;
-  top: -32px;
-  left: 76px;
+.explainer.active{
+  top: 15%;
+  left: 3%;
+  transition: 0.5s ease-in-out;
 }
 
 li{
@@ -129,10 +134,6 @@ li{
   padding: 15px 20px 0;
   text-align: center;
   font-size: 12px;
-}
-
-.hidden{
-  visibility: hidden;
 }
 
 footer{
@@ -149,8 +150,12 @@ a{
 }
 a:hover{
   text-decoration: overline;
+  color: #d8533b;
 }
 
+footer span{
+  display: block;
+}
 
 /* -------MEDIA QUARIES-------  */
 @media (max-width: 840px) {
@@ -179,11 +184,7 @@ button{
   width: 20rem;
   top: 62px;
   padding: 8px 15px;
-}
-
-.explainer::after{
-  top: -30px;
-  left: 68px;
+  
 }
 }
 
@@ -192,6 +193,10 @@ button{
   
   #level-title {
     font-size: 1.2rem;
+  }
+
+  .container{
+    margin: 60px auto;
   }
   
   .box {
@@ -207,12 +212,6 @@ button{
 
 .explainer{
   top: 52px;
-  font-size: 12px;
-}
-
-.explainer::after{
-  top: -30px;
-  left: 44px;
-  z-index: -1;
+  font-size: 14px;
 }
 }
