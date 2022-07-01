@@ -116,13 +116,11 @@ button{
   padding: 5px 12px;
   border-radius: 20px;
   transition: 0.5s ease-in-out;
-  max-width: 70vh;
-  overflow: scroll;
 }
 
 .explainer.active{
-  top: 15%;
-  left: 3%;
+  top: 0;
+  left: 10%;
   transition: 0.5s ease-in-out;
 }
 
