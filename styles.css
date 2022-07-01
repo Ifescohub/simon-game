@@ -10,6 +10,8 @@ body {
   line-height: 1.5;
 }
 
+
+
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
@@ -30,8 +32,8 @@ body {
 .box {
   margin: 15px 25px;
   display: inline-block;
-  height: 170px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   border-radius: 20%;
 }
@@ -104,23 +106,24 @@ button{
   color: #f8f3db;
   background-color: #360366fa;
   max-width: 40%;
+  max-height: 80vh;
   width: 18rem;
-  position: absolute;
+  position: fixed;
   left: -100%;
   top: 0;
   text-align: left;
   font-size: 14px;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: 'Bai Jamjuree', sans-serif;;
   font-weight: 400;
   line-height: 1.2;
-  padding: 5px 12px;
+  padding: 8px 20px;
   border-radius: 20px;
   transition: 0.5s ease-in-out;
 }
 
 .explainer.active{
-  top: 15%;
-  left: 3%;
+  top: 10%;
+  left: 15%;
   transition: 0.5s ease-in-out;
 }
 
@@ -139,7 +142,7 @@ li{
 footer{
   bottom: 50px;
   font-size: 12px;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: cursive;
   color: white;
   margin: 20px;
 }
