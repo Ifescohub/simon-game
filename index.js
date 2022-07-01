@@ -88,4 +88,8 @@ $("button").click(function(){
     $(".explainer").toggleClass("active");
 });
 
+$(".explainer").click(function(){
+    $(".explainer").removeClass("active");
+});
+
 
