@@ -20,7 +20,7 @@ $(".start").click(function (){
     }   
 });
 
-//Fomatting Button Clicks
+//Fomatting Button(box) Clicks
 $(".box").click(function(){
     let userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
@@ -85,7 +85,7 @@ function startOver(){
 
 
 // To display how it works when "help" button is clicked
-$("button").click(function(){
+$(".help").click(function(){
     $(".explainer").toggleClass("active");
 });
 
