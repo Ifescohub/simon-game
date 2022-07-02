@@ -7,7 +7,7 @@ let gamePattern = [];
 let userClickedPattern = [];
 
 //A check for when the game as started
-let start = true;
+let started = true;
 let level = 0;
 
 // Formatting start button click to start the game only
@@ -80,7 +80,7 @@ function animate(button){
 function startOver(){
     level = 0;
     gamePattern = [];
-    start = true;
+    started = true;
 }
 
 
