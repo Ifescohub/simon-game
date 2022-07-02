@@ -81,14 +81,18 @@ body {
 }
 
 
-input{
-  background-color: white;
-  border-radius: 8x;
+.start{
+  font-family: 'Press Start 2P', cursive;
+  padding: 15px;
+  text-align: center;
+  background-color:  #FEF2BF;
+  color: #080324be;
+  font-size: 14px;
+  border-radius: 10px;
   border: none;
-  width: 50px;
 }
 
-button{
+.help{
   font-family: 'Press Start 2P', cursive;
   padding: 15px;
   text-align: center;
@@ -174,7 +178,7 @@ footer span{
   width: 130px;
 }
 
-button{
+.help{
   padding: 15px 15px;
   font-size: 12px;
   left: 10px;
@@ -206,7 +210,7 @@ button{
     width: 100px;
   }
   
-button{
+.help{
   padding: 10px;
   font-size: 11px;
   left: 0;
