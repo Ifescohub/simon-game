@@ -10,18 +10,15 @@ let userClickedPattern = [];
 let start = true;
 let level = 0;
 
-// Formatting Keyboard press and button click to start the game only
-$(document).keydown(starter);  //for keyboad
+// Formatting start button click to start the game only
 
-$(".start").click(starter);  //for start button
-
-   function starter(){
+$(".start").click(function (){
     if (started) {
         $("h1").html("Level "+level);
         nextSequence();
         started = false;
     }   
-}
+});
 
 //Fomatting Button Clicks
 $(".box").click(function(){
